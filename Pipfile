@@ -9,6 +9,7 @@ verify_ssl = true
 flask = "*"
 tensorflow = "*"
 tensorflowjs = "*"
+gevent = "*"
 
 [requires]
 python_version = "3.8"
