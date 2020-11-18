@@ -13,5 +13,6 @@ def root():
 
 if __name__ == '__main__':
     # app.run(host='0.0.0.0', port=8080, debug=True)
-    http_server = WSGIServer(("0.0.0.0", 5000), app)
+    port = int(os.environ.get('PORT', 5000))
+    http_server = WSGIServer(("0.0.0.0", port), app)
     http_server.serve_forever()
